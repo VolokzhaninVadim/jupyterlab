@@ -1,0 +1,33 @@
+version: '2.3'
+services:
+    
+  jupyterlab:
+    build: 
+      context: .
+      dockerfile:  ./Dockerfile
+    container_name: jupyterlab
+    restart: always
+    env_file:
+      - env.env
+    ports:
+      - "8888:8888"
+    volumes:
+      - /mnt/backup/documents/projects:/root/jupyterlab
+      - /home/volokzhanin/.ssh/:/root/.ssh
+      - /opt/cuda:/usr/local/cuda
+      - /mnt/backup/documents/selenium/:/selenium
+      - /mnt/backup/documents/ml_models/:/ml_models
+      - /mnt/media/share/:/share
+      - /mnt/backup/backup/vvy_smartphones/camera/:/camera_vvy
+      - /mnt/backup/backup/angel_smartphones/camera_device_angel/:/camera_angel
+      - /mnt/backup/photo/Мои Фото/Вероника/:/veronica
+    devices:
+      - /dev/nvidia0
+      - /dev/nvidiactl
+      - /dev/nvidia-modeset
+      - /dev/nvidia-uvm
+      - /dev/nvidia-uvm-tools
+    runtime: nvidia
+    entrypoint: jupyter-lab
+    
+
