@@ -11,9 +11,6 @@ exit
 # ssl для  JuPyteRLab
 * Беру с [nextcloud](https://github.com/VolokzhaninVadim/nextcloud).
 
-* Выдаем права: 
-`sudo chown $USER:$USER /home/volokzhanin/.ssl/cert.pem`
-
 ## Генерация пароля для tor
 1. Устанавливаем tor `sudo pacman -S tor`
 1. Генерируем пароль`tor --hash-password mypassword`
