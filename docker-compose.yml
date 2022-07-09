@@ -8,7 +8,7 @@ services:
     container_name: jupyterlab
     restart: always
     env_file:
-      - env.env
+      - env.env 
     ports:
       - "8888:8888"
     volumes:
@@ -21,6 +21,7 @@ services:
       - /mnt/backup/backup/vvy_smartphones/camera/:/camera_vvy
       - /mnt/backup/backup/angel_smartphones/camera_device_angel/:/camera_angel
       - /mnt/backup/photo/Мои Фото/Вероника/:/veronica
+      - /home/volokzhanin/docker/nextcloud/proxy/certs/:/certs
     devices:
       - /dev/nvidia0
       - /dev/nvidiactl

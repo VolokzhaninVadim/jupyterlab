@@ -65,3 +65,4 @@ pyarrow
 pyspark
 python-dotenv
 xmltodict
+geopy==2.2.0
