@@ -9,17 +9,7 @@ exit
 ```
 
 # ssl для  JuPyteRLab
-* В  домашней папке выполняем: 
-```
-# Создаем папку 
-sudo mkdir ~/.ssl
-# Переходим в папку 
-cd ssl
-# Создаем ssl
-sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout cert.pem -out cert.pem
-```
-* Выдаем права: 
-`sudo chown $USER:$USER /home/volokzhanin/.ssl/cert.pem`
+* Беру с [nextcloud](https://github.com/VolokzhaninVadim/nextcloud).
 
 ## Генерация пароля для tor
 1. Устанавливаем tor `sudo pacman -S tor`
