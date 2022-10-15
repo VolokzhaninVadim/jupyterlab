@@ -1,0 +1,7 @@
+.ipynb_checkpoints/*
+checking_work/.ipynb_checkpoints/*
+.zshrc
+env.env
+ipython_kernel_config.py
+jupyter_notebook_config.py
+jupyterlab.sh

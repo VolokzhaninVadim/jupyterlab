@@ -21,7 +21,7 @@ services:
       - /mnt/backup/backup/vvy_smartphones/camera/:/camera_vvy
       - /mnt/backup/backup/angel_smartphones/camera_device_angel/:/camera_angel
       - /mnt/backup/photo/Мои Фото/Вероника/:/veronica
-      - /home/volokzhanin/docker/nextcloud/proxy/certs/:/certs
+      - /home/volokzhanin/docker/private_cloud/proxy/certs/:/certs
     devices:
       - /dev/nvidia0
       - /dev/nvidiactl
