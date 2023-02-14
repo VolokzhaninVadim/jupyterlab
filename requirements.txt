@@ -11,7 +11,7 @@ jupyter_contrib_nbextensions==0.5.1
 jupyter==1.0.0
 jupyterlab-launcher==0.10.5
 notebook==6.0.0
-jupyter-kernel-gateway      
+jupyter-kernel-gateway
 jupyter-telemetry==0.1.0
 scikit-image==0.18.2
 seaborn==0.11.1
@@ -26,8 +26,8 @@ lightgbm==2.3.1
 selenium==3.141.0
 tqdm
 pytesseract
-folium 
-plotly 
+folium
+plotly
 ipyleaflet
 keplergl
 jupyterlab-dash
@@ -36,7 +36,7 @@ beautifulsoup4==4.9.3
 fake-useragent==0.1.11
 pymorphy2==0.9.1
 pymorphy2-dicts-ru==2.4.417127.4579844
-SQLAlchemy==1.3.20
+SQLAlchemy==2.0.3
 Shapely==1.7.1
 stem==1.8.0
 psycopg2-binary
@@ -47,9 +47,9 @@ nodejs==0.1.1
 tornado
 dask==2.1.0
 opencv-python
-jupyterlab==3.3 
-efficient-apriori 
-xlrd==1.2.0 
+jupyterlab==3.3
+efficient-apriori
+xlrd==1.2.0
 openpyxl
 cufflinks
 pandas-profiling[notebook]==2.8.0
@@ -60,9 +60,9 @@ mmcv
 psutil
 pytelegrambotapi
 exif
-apache-airflow
 pyarrow
 pyspark
 python-dotenv
 xmltodict
 geopy==2.2.0
+python-dotenv==0.21.1
