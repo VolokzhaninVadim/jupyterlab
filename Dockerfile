@@ -26,6 +26,9 @@ RUN apt-get update \
     && apt-get install -y yarn \
     && apt-get install -y build-essential
 
+############### Install graphviz  #########
+RUN apt-get install graphviz graphviz-dev -y
+
 ################# Install packages ###################
 ADD requirements_torch.txt requirements_torch.txt
 ADD requirements.txt requirements.txt
